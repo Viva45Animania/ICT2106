@@ -13,6 +13,6 @@ namespace ICT2106.DocumentCreator.Models.Html
         public abstract HtmlElement Clone();
 
         // get a string representing the element
-        public abstract string GetString();
+        public abstract string String { get; }
     }
 }

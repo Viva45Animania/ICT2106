@@ -74,7 +74,7 @@ namespace ICT2106.DocumentCreator.Models.Latex
 
             // append the body elements
             foreach (LatexElement elem in body)
-                sbuilder.Append(elem.GetString());
+                sbuilder.Append(elem.String);
 
             // end the document
             sbuilder.Append("\\end{document}");

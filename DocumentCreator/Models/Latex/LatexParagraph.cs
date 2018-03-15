@@ -24,10 +24,7 @@ namespace ICT2106.DocumentCreator.Models.Latex
             return new LatexParagraph(text);
         }
 
-        // LaTeX paragraphs are denoted by empty lines
-        public override string GetString()
-        {
-            return text + "\n\n";
-        }
-    }
+		// LaTeX paragraphs are denoted by empty lines
+		public override string String => text + "\n\n";
+	}
 }

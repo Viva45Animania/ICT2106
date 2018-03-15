@@ -10,10 +10,10 @@ namespace ICT2106.DocumentCreator.Models
 {
     public interface IHeading
     {
-        // get a string containing the heading
-        string GetString();
+		// get a string containing the heading
+		string String { get; }
 
-        // get the level of the heading
-        int GetLevel();
+		// get the level of the heading
+		int GetLevel();
     }
 }

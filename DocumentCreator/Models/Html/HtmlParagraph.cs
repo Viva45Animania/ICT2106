@@ -24,10 +24,7 @@ namespace ICT2106.DocumentCreator.Models.Html
             return new HtmlParagraph(text);
         }
 
-        // paragraphs in HTML are denoted by "<p>...</p>"
-        public override string GetString()
-        {
-            return "<p>\n" + text + "\n</p>\n\n";
-        }
-    }
+		// paragraphs in HTML are denoted by "<p>...</p>"
+		public override string String => "<p>\n" + text + "\n</p>\n\n";
+	}
 }

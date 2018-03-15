@@ -49,6 +49,10 @@ namespace ICT2106.DocumentCreator.Controllers
                     // use the Clone pattern
                     return RedirectToAction("Index", "Clone", parameters);
 
+                case "plain":
+                    // use the Clone pattern
+                    return RedirectToAction("Index", "Plain", parameters);
+
                 default:
                     // unrecognised method; return to the blank form
                     return RedirectToAction("Index");

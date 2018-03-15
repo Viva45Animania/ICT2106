@@ -40,7 +40,7 @@ namespace ICT2106.DocumentCreator.Controllers
             IHeading headingObj = factory.CreateHeading(1, headingText);
             IParagraph paragraphObj = factory.CreateParagraph(paragraphText);
             
-            return View("~/Views/Shared/Results.cshtml", headingObj.GetString() + paragraphObj.GetString());
+            return View("~/Views/Shared/Results.cshtml", headingObj.String+ paragraphObj.String);
         }
     }
 }

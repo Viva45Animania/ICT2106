@@ -62,7 +62,7 @@ namespace ICT2106.DocumentCreator.Models.Html
 
             // append all of the body elements
             foreach (HtmlElement elem in body)
-                sbuilder.Append(elem.GetString());
+                sbuilder.Append(elem.String);
 
             // finish the body
             sbuilder.Append("</body>\n\n");

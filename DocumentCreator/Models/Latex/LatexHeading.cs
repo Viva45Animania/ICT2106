@@ -38,14 +38,11 @@ namespace ICT2106.DocumentCreator.Models.Latex
             return new LatexHeading(level, text);
         }
 
-        // LaTeX headings are denoted by \chapter{}, \section{}, \subsection{}, etc.
-        public override string GetString()
-        {
-            return "\\" + COMMAND[level - 1] + "{" + text + "}\n\n";
-        }
+		// LaTeX headings are denoted by \chapter{}, \section{}, \subsection{}, etc.
+		public override string String => "\\" + COMMAND[level - 1] + "{" + text + "}\n\n";
 
-        // get the level of theading
-        public int GetLevel()
+		// get the level of theading
+		public int GetLevel()
         {
             return level;
         }

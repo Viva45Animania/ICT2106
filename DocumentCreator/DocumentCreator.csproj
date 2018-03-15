@@ -12,4 +12,14 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Controllers\CloneController %28copy%29.cs" />
+    <Compile Remove="Controllers\Plain.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Controllers\Plain.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Plain\" />
+  </ItemGroup>
 </Project>

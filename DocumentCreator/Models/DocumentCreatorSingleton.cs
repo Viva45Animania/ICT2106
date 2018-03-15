@@ -40,6 +40,9 @@ namespace ICT2106.DocumentCreator.Models
                 case "latex":
                     return new Latex.LatexDocumentBuilder();
 
+                case "plain":
+                    return new Plain.PlainDocumentBuilder();
+
                 default:
                     return null;
             }
@@ -55,6 +58,9 @@ namespace ICT2106.DocumentCreator.Models
 
                 case "latex":
                     return new Latex.LatexDocumentFactory();
+
+                case "plain":
+                    return new Plain.PlainDocumentFactory();
 
                 default:
                     return null;

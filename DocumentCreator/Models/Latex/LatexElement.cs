@@ -13,7 +13,7 @@ namespace ICT2106.DocumentCreator.Models.Latex
         // create a deep clone of the element
         public abstract LatexElement Clone();
 
-        // get a string representing the element
-        public abstract string GetString();
-    }
+		// get a string representing the element
+		public abstract string String { get; }
+	}
 }

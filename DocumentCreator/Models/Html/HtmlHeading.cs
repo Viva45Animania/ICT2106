@@ -32,15 +32,18 @@ namespace ICT2106.DocumentCreator.Models.Html
             return new HtmlHeading(level, text);
         }
 
-        // headings in HTML are denoted by "<hN>...</hN>" where N is the level of the header
-        public override string GetString()
-        {
-            string tag = "h" + level;
-            return "<" + tag + ">" + text + "</" + tag + ">\n\n";
-        }
+		// headings in HTML are denoted by "<hN>...</hN>" where N is the level of the header
+		public override string String
+		{
+			get
+			{
+				string tag = "h" + level;
+				return "<" + tag + ">" + text + "</" + tag + ">\n\n";
+			}
+		}
 
-        // get the level of the header
-        public int GetLevel()
+		// get the level of the header
+		public int GetLevel()
         {
             return level;
         }

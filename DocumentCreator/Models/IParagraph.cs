@@ -10,7 +10,7 @@ namespace ICT2106.DocumentCreator.Models
 {
     public interface IParagraph
     {
-        // get a string containing the paragraph
-        string GetString();
-    }
+		// get a string containing the paragraph
+		string String { get; }
+	}
 }
